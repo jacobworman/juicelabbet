@@ -28,9 +28,7 @@
 		<?php
 			/**
 			 * Header Widgets
-			 */
-			get_sidebar( 'header' );
-			/**
+			*//*
 			 * Site identity
 			 */
 			get_template_part( 'parts/site', 'identity' );

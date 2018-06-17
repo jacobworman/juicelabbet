@@ -5,10 +5,7 @@
 * @package elara
 */
 $elara_example_content  = elara_get_option( 'elara_example_content' );
-if ( is_active_sidebar( 'footer-columns-col-1' )
-	|| is_active_sidebar( 'footer-columns-col-2' )
-	|| is_active_sidebar( 'footer-columns-col-3' )
-	|| is_active_sidebar( 'footer-columns-col-4' )
+if ( is_active_sidebar( 'footer-columns-col-3' )
 	|| is_active_sidebar( 'footer-columns-col-5' ) ) : ?>
 
 	<div class="widget-area widget-area-footer widget-area-footer-columns" role="complementary">

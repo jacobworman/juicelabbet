@@ -37,7 +37,7 @@ if ( ! function_exists( 'elara_get_bootstrap_class' ) ) :
 			case 1: return 'col-md-12'; break;
 			case 2: return 'col-lg-6 col-md-6 col-sm-6 col-xs-6'; break;
 			case 3: return 'col-lg-4 col-md-4 col-sm-4 col-xs-12'; break;
-			case 4: return 'col-lg-3 col-md-3 col-sm-6 col-xs-12'; break;
+			case 4: return 'col-lg-3 col-md-3 col-sm-6 col-xs-6'; break;
 			case 5: return 'col-lg-20 col-md-20 col-sm-6'; break;
 			case 6: return 'col-lg-2 col-md-2 col-sm-2 col-xs-6'; break;
 		}

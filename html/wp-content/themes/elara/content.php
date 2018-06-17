@@ -6,7 +6,7 @@
  */
 $elara_class = elara_set_feed_post_class(); ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry matcheight ' . esc_attr( $elara_class . ' col-sm-6' ) ); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry matcheight ' . esc_attr( $elara_class ) ); ?>>
 
 	<?php elara_entry_thumbnail( 'elara-archive', true ); ?>
 

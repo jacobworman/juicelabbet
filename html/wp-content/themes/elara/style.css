@@ -1870,11 +1870,7 @@ form select.form-control {
 }
 
 .entry-singular .entry-content p:first-child:first-letter {
-	font-size: 64px;
-	line-height: 63px;
-	float: left;
-	padding-right: 4px;
-	padding-left: 4px;
+
 }
 
 .entry-singular .entry-content blockquote {

@@ -19,6 +19,9 @@
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php endif; ?>
 	<?php wp_head(); ?>
+	<?php
+	wp_enqueue_style( "style3", get_stylesheet_uri() . "fontawesome-all.min.css");
+	?>
 </head>
 
 <body <?php body_class(); ?>>

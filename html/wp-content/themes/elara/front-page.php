@@ -69,6 +69,43 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 					<?php elara_show_sidebar(); ?>
 				</div><!-- row -->
 
+
+				<!-- my -->
+				<div class="divbox">
+	<section>
+	<h1 style="margin:0 auto;padding:0;text-align:center;">Vad söker du? <i class="far fa-smile fa-3x"></i></h1>
+	</section>
+	<div class="row">
+	  <div class="column" style="border-right:1px solid black;border-bottom:1px solid black;">
+	    <a href="/apple">
+	      <h2 class="block-icon"><i class="fas fa-tree-alt fa-2x" style="color:#8db600;"></i><br />Äpple</h2>
+	  </a>
+	  </div>
+	  <div class="column" style="border-left:1px solid black;border-bottom:1px solid black;">
+	     <a href="/morot">
+
+	      <h2 class="block-icon"><i class="ab fa-cuttlefish fa-2x" style="color:#ed9121;"></i><br />Morot</h2>
+
+	  </a>
+	</div>
+	<div class="row">
+	  <div class="column" style="border-left:1px solid black;border-top:1px solid black;">
+	    <a href="/apelsin">
+
+	      <h2 class="block-icon"><i class="fas fa-circle fa-2x" style="color:#FFA500;"></i><br />Apelsin</h2>
+
+	  </a>
+	  </div>
+	  <div class="column" style="border-right:1px solid black;border-top:1px solid black;">
+	    <a href="/blandat">
+
+	      <h2 class="block-icon"><i class="fas fa-blender fa-2x" style="color:#4286f4;"></i><br />Blandat</h2>
+
+	  </a>
+	  </div>
+	</div>
+</div>
+
 				<?php
 					/**
 					 * Featured post
@@ -91,41 +128,6 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 	<?php endif; ?>
 </div><!-- default-background-color -->
 
-<div class="divbox">
-	<section>
-	<h1 style="margin:0 auto;padding:0;text-align:center;">Vad söker du? <i class="far fa-smile fa-3x"></i></h1>
-	</section>
-	<div id="block-main" class="block-main">
-		<a href="/apple">
-	  <section class="block about">
-	    <div class="block-box">
-	      <h2 class="block-icon"><i class="fas fa-tree-alt fa-2x" style="color:#8db600;"></i><br />Äpple</h2>
-	    </div>
-	  </section>
-	  </a>
-	  <a href="/morot">
-	  <section class="block works">
-	    <div class="block-box">
-	      <h2 class="block-icon"><i class="ab fa-cuttlefish fa-2x" style="color:#ed9121;"></i><br />Morot</h2>
-	    </div>
-	  </section>
-	  </a>
-	  <a href="/apelsin">
-	  <section class="block blog">
-	    <div class="block-box">
-	      <h2 class="block-icon"><i class="fas fa-circle fa-2x" style="color:#FFA500;"></i><br />Apelsin</h2>
-	    </div>
-	  </section>
-	  </a>
-	  <a href="/blandat">
-	  <section class="block contact">
-	    <div class="block-box">
-	      <h2 class="block-icon"><i class="fas fa-blender fa-2x" style="color:#4286f4;"></i><br />Blandat</h2>
-	    </div>
-	  </section>
-	  </a>
-	</div>
-</div>
 
 <?php
 	/**

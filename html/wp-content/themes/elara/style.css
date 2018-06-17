@@ -3302,8 +3302,15 @@ form select.form-control {
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
+    height: 200px; /* Should be removed. Only for demonstration */
     text-align: center;
+}
+
+.column1 h2{
+	color: #646464;
+		font-weight: 300;
+		line-height: 1em;
+		margin: 0 0 0.5em 0;
 }
 
 /* Clear floats after the columns */

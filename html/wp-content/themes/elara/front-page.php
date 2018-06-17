@@ -78,13 +78,13 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 	<div class="row1">
 	  <div class="column1" style="border-right:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	    <a href="/apple">
-	    	<i class="fas fa-tree-alt fa-2x" style="color:#8db600;"></i>
+	    	<i class="fas fa-tree-alt fa-3x" style="color:#8db600;"></i>
 	      <h2 class="block-icon"><br />Äpple</h2>
 	  </a>
 	  </div>
 	  <div class="column1" style="border-left:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	     <a href="/morot">
-	     	<i class="ab fa-cuttlefish fa-2x" style="color:#ed9121;"></i>
+	     	<i class="ab fa-cuttlefish fa-3x" style="color:#ed9121;"></i>
 	      <h2 class="block-icon"><br />Morot</h2>
 
 	  </a>
@@ -92,14 +92,14 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 	<div class="row1">
 	  <div class="column1" style="border-left:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/apelsin">
-	    	<i class="fas fa-circle fa-2x" style="color:#FFA500;"></i>
+	    	<i class="fas fa-circle fa-3x" style="color:#FFA500;"></i>
 	      <h2 class="block-icon"><br />Apelsin</h2>
 
 	  </a>
 	  </div>
 	  <div class="column1" style="border-right:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/blandat">
-	    	<i class="fas fa-blender fa-2x" style="color:#4286f4;"></i>
+	    	<i class="fas fa-blender fa-3x" style="color:#4286f4;"></i>
 	      <h2 class="block-icon"><br />Blandat</h2>
 
 	  </a>

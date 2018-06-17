@@ -72,34 +72,35 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 
 				<!-- my -->
 				<div class="divbox">
-	<section>
-	<h1 style="margin:0 auto;padding:0;text-align:center;">Vad söker du? <i class="far fa-smile fa-3x"></i></h1>
+	<section style="margin-bottom:35px;">
+	<h1 style="margin:0 auto;padding:0;text-align:center;color: #5a5555;font-family: QuattroSans,Arial,sans-serif;">Vad söker du? <i class="far fa-smile fa-3x"></i></h1>
 	</section>
 	<div class="row1">
-	  <div class="column1" style="border-right:1px solid black;border-bottom:1px solid black;">
+	  <div class="column1" style="border-right:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	    <a href="/apple">
-	      <h2 class="block-icon"><i class="fas fa-tree-alt fa-2x" style="color:#8db600;"></i><br />Äpple</h2>
+	    	<i class="fas fa-tree-alt fa-2x" style="color:#8db600;"></i>
+	      <h2 class="block-icon"><br />Äpple</h2>
 	  </a>
 	  </div>
-	  <div class="column1" style="border-left:1px solid black;border-bottom:1px solid black;">
+	  <div class="column1" style="border-left:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	     <a href="/morot">
-
-	      <h2 class="block-icon"><i class="ab fa-cuttlefish fa-2x" style="color:#ed9121;"></i><br />Morot</h2>
+	     	<i class="ab fa-cuttlefish fa-2x" style="color:#ed9121;"></i>
+	      <h2 class="block-icon"><br />Morot</h2>
 
 	  </a>
 	</div>
 	<div class="row1">
-	  <div class="column1" style="border-left:1px solid black;border-top:1px solid black;">
+	  <div class="column1" style="border-left:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/apelsin">
-
-	      <h2 class="block-icon"><i class="fas fa-circle fa-2x" style="color:#FFA500;"></i><br />Apelsin</h2>
+	    	<i class="fas fa-circle fa-2x" style="color:#FFA500;"></i>
+	      <h2 class="block-icon"><br />Apelsin</h2>
 
 	  </a>
 	  </div>
-	  <div class="column1" style="border-right:1px solid black;border-top:1px solid black;">
+	  <div class="column1" style="border-right:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/blandat">
-
-	      <h2 class="block-icon"><i class="fas fa-blender fa-2x" style="color:#4286f4;"></i><br />Blandat</h2>
+	    	<i class="fas fa-blender fa-2x" style="color:#4286f4;"></i>
+	      <h2 class="block-icon"><br />Blandat</h2>
 
 	  </a>
 	  </div>

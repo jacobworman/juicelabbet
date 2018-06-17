@@ -25,17 +25,8 @@ if ( $elara_active_sidebar > 1 ) {
 				<div class="footer-copyrights">
 					<ul>
 						<li class="credits">
-                            <a href="https://www.lyrathemes.com/elara/" target="_blank"><?php esc_html_e('Elara', 'elara'); ?></a> <?php esc_html_e('by LyraThemes', 'elara'); ?>
-                        </li>
-
-						<li>
-							<?php $elara_footer_copyright = elara_get_option( 'elara_footer_copyright' );
-
-							if ( $elara_footer_copyright ) : ?>
-								<?php echo wp_kses_post( $elara_footer_copyright ); ?>
-							<?php endif; // $elara_footer_copyright ?>
-						</li>
-					</ul>
+                            @Juicelabbet 2018
+                           </li>
 				</div><!-- footer-copyrights -->
 
 			</div><!-- wrapper -->

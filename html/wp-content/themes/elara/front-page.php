@@ -84,7 +84,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 	  </div>
 	  <div class="column1" style="border-left:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	     <a href="/morot">
-	     	<i class="ab fa-cuttlefish fa-5x" style="color:#ed9121;"></i>
+	     	<i class="fab fa-cuttlefish fa-5x" style="color:#ed9121;"></i>
 	      <h2 class="block-icon"><br />Morot</h2>
 
 	  </a>

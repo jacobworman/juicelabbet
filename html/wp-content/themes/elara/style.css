@@ -3318,6 +3318,7 @@ form select.form-control {
     content: "";
     display: table;
     clear: both;
+    padding-top:45px;
 }
 /*!
  * Font Awesome Pro 5.0.13 by @fontawesome - https://fontawesome.com

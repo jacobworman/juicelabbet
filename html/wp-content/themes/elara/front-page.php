@@ -72,34 +72,34 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 
 				<!-- my -->
 				<div class="divbox">
-	<section style="margin-bottom:35px;">
-	<h1 style="margin:0 auto;padding:0;text-align:center;color: #5a5555;font-family: QuattroSans,Arial,sans-serif;">Vad söker du? <i class="far fa-smile fa-3x"></i></h1>
+	<section style="margin-bottom:55px;">
+	<h1 style="margin:0 auto;padding:0;text-align:center;color: #5a5555;font-family: QuattroSans,Arial,sans-serif;">Vad söker du? <i class="far fa-smile fa-2x"></i></h1>
 	</section>
 	<div class="row1">
 	  <div class="column1" style="border-right:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	    <a href="/apple">
-	    	<i class="fas fa-tree-alt fa-3x" style="color:#8db600;"></i>
+	    	<i class="fas fa-tree-alt fa-5x" style="color:#8db600;"></i>
 	      <h2 class="block-icon"><br />Äpple</h2>
 	  </a>
 	  </div>
 	  <div class="column1" style="border-left:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
 	     <a href="/morot">
-	     	<i class="ab fa-cuttlefish fa-3x" style="color:#ed9121;"></i>
+	     	<i class="ab fa-cuttlefish fa-5x" style="color:#ed9121;"></i>
 	      <h2 class="block-icon"><br />Morot</h2>
 
 	  </a>
 	</div>
 	<div class="row1">
-	  <div class="column1" style="border-left:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
+	  <div class="column1" style="border-right:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/apelsin">
-	    	<i class="fas fa-circle fa-3x" style="color:#FFA500;"></i>
+	    	<i class="fas fa-circle fa-5x" style="color:#FFA500;"></i>
 	      <h2 class="block-icon"><br />Apelsin</h2>
 
 	  </a>
 	  </div>
-	  <div class="column1" style="border-right:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
+	  <div class="column1" style="border-left:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
 	    <a href="/blandat">
-	    	<i class="fas fa-blender fa-3x" style="color:#4286f4;"></i>
+	    	<i class="fas fa-blender fa-5x" style="color:#4286f4;"></i>
 	      <h2 class="block-icon"><br />Blandat</h2>
 
 	  </a>

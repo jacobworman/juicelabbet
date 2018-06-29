@@ -21,10 +21,14 @@
 	<?php wp_head(); ?>
 	<meta name="google-site-verification" content="ltfoA0gHVeFuY1fpeQg6OBUPA1VVbl3F0eOAP90rtW4" />
 </head>
-
+<style>
+.background{
+	background-image: url("https://imgur.com/a/LdNWGoE");
+}
+</style>
 <body <?php body_class(); ?>>
 
-	<div class="header" role="banner">
+	<div class="header background" role="banner">
 
 		<?php
 			/**

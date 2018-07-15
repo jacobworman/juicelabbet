@@ -12,6 +12,7 @@ get_header();
 
 $elara_pages_featured_image_show = elara_get_option( 'elara_pages_featured_image_show' ); ?>
 
+<h1>YES!!</h1>
 <div class="default-background-color">
 	<main class="main" role="main">
 		<div class="wrapper">

@@ -2169,6 +2169,7 @@ input, select, textarea {
 		text-align: center;
 		position: relative;
 		padding: 8em 0;
+		background: #84c1f9;
 	}
 
 		#banner header {
@@ -2383,7 +2384,6 @@ input, select, textarea {
 
 			#banner {
 				padding: 6em 0;
-				margin: 3em 0 0 0;
 			}
 
 		/* Intro */
@@ -2852,7 +2852,6 @@ input, select, textarea {
 
 			#banner {
 				padding: 6em 0;
-				margin: 2em 0 0 0;
 			}
 
 				#banner header {

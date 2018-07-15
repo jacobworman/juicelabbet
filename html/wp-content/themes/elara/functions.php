@@ -45,7 +45,7 @@ function elara_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
-	set_post_thumbnail_size( 690, 900, true );
+	set_post_thumbnail_size( 340, 255, true );
 	add_image_size( 'elara-slider', 1470, 680, true );
 	add_image_size( 'elara-archive', 340, 255, true ); // used for blog and category archive
 	add_image_size( 'elara-thumbnail', 440, 360, true ); // used for featured categories columns

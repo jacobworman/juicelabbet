@@ -14,7 +14,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 <!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Juices. Just how pure it should be.</h2>
+								<h2>Simple Juices.</h2>
 								<?php
 										if ( has_nav_menu( 'header' ) ) :
 											$elara_args = array(
@@ -76,7 +76,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 							</div>
 							<footer>
 								<ul class="actions">
-									<li><a href="https://instagram.com/juicelabbet.se" class="button large">Instagram</a></li>
+									<li><a href="https://instagram.com/juicelabbet.se" class="button large">Kika in vår instagram här</a></li>
 								</ul>
 							</footer>
 						</section>
@@ -108,7 +108,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 										<div class="row">
 											<div class="col-6 col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/20180618_150658-440x360.jpg" alt="" /></a>
+													<a href="https://juicelabbet.se/blandat/qala-juice/" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/20180618_150658-440x360.jpg" alt="" /></a>
 													<header>
 														<h3>Qala juice</h3>
 													</header>
@@ -122,7 +122,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 											</div>
 											<div class="col-6 col-12-small">
 												<section class="box">
-													<a href="#" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/rodbetsjuice_vid_fibromyalgi_580x416-440x360.jpg" alt="" /></a>
+													<a href="https://juicelabbet.se/blandat/rodbetsjuice/" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/rodbetsjuice_vid_fibromyalgi_580x416-440x360.jpg" alt="" /></a>
 													<header>
 														<h3>Rödbetsjuice</h3>
 													</header>

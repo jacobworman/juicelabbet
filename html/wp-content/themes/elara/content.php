@@ -9,7 +9,6 @@ $elara_class = elara_set_feed_post_class(); ?>
 
 <div class="col-4 col-6-medium col-12-small">
 	<section class="box">
-	<article id="post-<?php the_ID(); ?>" <?php post_class( 'entry matcheight ' . esc_attr( $elara_class ) ); ?>>
 
 		<?php elara_entry_thumbnail( 'elara-archive', true ); ?>
 
@@ -38,6 +37,5 @@ $elara_class = elara_set_feed_post_class(); ?>
 		<li><a href="<?php esc_url( get_permalink() ); ?>" class="button alt">Find out more</a></li>
 		</ul>
 		</footer>
-	</article><!-- #post-<?php the_ID(); ?> -->
 </section>
 </div>

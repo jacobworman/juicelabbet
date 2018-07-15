@@ -10,7 +10,7 @@ get_header();
 
 $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_position' ); ?>
 
-<section id="header">
+<section id="header2">
 <!-- Banner -->
 						<section id="banner">
 							<header>

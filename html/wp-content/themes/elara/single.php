@@ -19,7 +19,7 @@ if ( $elara_posts_sidebar ) {
 	$elara_row_class = 'post-sidebar-off';
 }
 ?>
-
+<h1>YES3!!</h1>
 <div class="default-background-color">
 	<main class="main" role="main">
 		<div class="wrapper">

@@ -10,6 +10,7 @@
  */
 get_header(); ?>
 
+<h1>YES4!!</h1>
 <div class="default-background-color">
 	<main class="main" role="main">
 		<div class="wrapper">

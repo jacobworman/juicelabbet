@@ -44,13 +44,13 @@ if ( ! function_exists( 'elara_entry_thumbnail' ) ) :
 				<?php if ( has_post_thumbnail() ) : ?>
 					<?php the_post_thumbnail( $size, array( 'alt' => get_the_title(), 'class' => 'img-responsive' ) ); ?>
 				<?php elseif ( $elara_example_content == 1 ) : ?>
-					<img src="<?php echo esc_url( elara_get_sample( $size ) ); ?>" alt="<?php the_title_attribute(); ?>" class="img-responsive" />
+					<img height="" src="<?php echo esc_url( elara_get_sample( $size ) ); ?>" alt="<?php the_title_attribute(); ?>" class="img-responsive" />
 				<?php endif; ?>
 
 				<?php if ( 'video' === get_post_format() && elara_get_first_embed_media( get_the_ID() ) && $show_modal ) : ?>
 						<span class="screen-reader-text"><?php esc_html_e( 'Launch video modal', 'elara' ); ?></span>
 						<span class="entry-play-icon">
-							<img src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/play.png" alt="<?php esc_attr_e( 'Launch video modal', 'elara' ); ?>">
+							<img  height="" src="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/images/play.png" alt="<?php esc_attr_e( 'Launch video modal', 'elara' ); ?>">
 						</span>
 					</a>
 				<?php else : ?>

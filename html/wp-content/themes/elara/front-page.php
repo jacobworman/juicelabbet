@@ -10,12 +10,43 @@ get_header();
 
 $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_position' ); ?>
 
+<section id="header">
+<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>Juices. Just how pure it should be.</h2>
+								<?php
+										if ( has_nav_menu( 'header' ) ) :
+											$elara_args = array(
+												'theme_location'    => 'header',
+												'depth'             => 2,
+												'container'         => 'div',
+												'container_id'      => 'main-menu',
+												'container_class'   => 'navbar-collapse collapse menu-container',
+												'menu_class'        => 'nav navbar-nav menu',
+												'fallback_cb'       => '',
+												'walker'            => new wp_bootstrap_navwalker()
+											);
+
+											wp_nav_menu( $elara_args );
+
+										else :
+
+											elara_default_nav();
+
+										endif; // has_nav_menu( 'header' )
+									?>
+							</header>
+						</section>
+
 <!-- Intro -->
 						<section id="intro" class="container">
 							<div class="row">
 								<div class="col-4 col-12-medium">
 									<section class="first">
-										<a href="#" class="image featured"><img src="https://png.pngtree.com/element_pic/17/07/21/b50c2bbd93b6750d7917026716e56c68.jpg" alt="" /></a>
+										<a href="/taggar/ingefara">
+										<i class="fas fa-circle fa-5x" style="color:#FFA500;"></i>
+											</a>
 										<header>
 											<a href="/taggar/ingefara"><h2>Ingefära</h2></a>
 										</header>
@@ -23,16 +54,21 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="middle">
-										<a href="#" class="image featured"><img src="https://www.freepngimg.com/thumb/apple/9-apple-png-image-thumb.png" alt="" /></a>
-										<header>
+										<a href="/apple">
+										    <i class="fas fa-tree-alt fa-5x" style="color:#8db600;"></i>
+										  </a>
+										  <header>
 											<a href="/apple"><h2>Äpple</h2></a>
 										</header>
 									</section>
 								</div>
 								<div class="col-4 col-12-medium">
 									<section class="last">
-										<a href="#" class="image featured"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_3eRHQzKiOFPFPMjsGdCybqyap_oQBxxAShT6ztm__WiMJGA" alt="" /></a>
-										<header>
+										<a href="/morot">
+									     	<i class="fab fa-cuttlefish fa-5x" style="color:#ed9121;"></i>
+
+									  </a>
+	 										 <header>
 											<a href="/morot"><h2>Morot</h2></a>
 										</header>
 									</section>
@@ -44,7 +80,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 								</ul>
 							</footer>
 						</section>
-
+</section>
 <!-- Main -->
 				<section id="main">
 					<div class="container">

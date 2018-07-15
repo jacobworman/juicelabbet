@@ -38,31 +38,4 @@
 							</button>
 						</form>
 
-					<!-- Banner -->
-						<section id="banner">
-							<header>
-								<h2>Juices. Just how pure it should be.</h2>
-								<?php
-										if ( has_nav_menu( 'header' ) ) :
-											$elara_args = array(
-												'theme_location'    => 'header',
-												'depth'             => 2,
-												'container'         => 'div',
-												'container_id'      => 'main-menu',
-												'container_class'   => 'navbar-collapse collapse menu-container',
-												'menu_class'        => 'nav navbar-nav menu',
-												'fallback_cb'       => '',
-												'walker'            => new wp_bootstrap_navwalker()
-											);
-
-											wp_nav_menu( $elara_args );
-
-										else :
-
-											elara_default_nav();
-
-										endif; // has_nav_menu( 'header' )
-									?>
-							</header>
-						</section>
 				</section>

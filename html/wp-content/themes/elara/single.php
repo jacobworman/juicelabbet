@@ -38,11 +38,18 @@ if ( $elara_posts_sidebar ) {
 								<div class=" <?php echo esc_attr( $elara_row_class ); ?>">
 								<header>
 									<h2><?php elara_entry_title(); ?></h2>
-									<p><?php elara_entry_categories(); ?>
+									<p><?php elara_entry_author(); ?>
+										<?php elara_entry_categories(); ?>
 											<?php elara_entry_separator( 'categories-date' ); ?>
 											<?php elara_entry_date(); ?></p>
 								</header>
-								
+								 <?php
+										if ( $elara_posts_sidebar_position == 'top' && $elara_posts_sidebar ) :
+											if ( $elara_posts_featured_image_show ) :
+												elara_entry_thumbnail( 'elara-slider' );
+											endif;
+										endif;
+									?>
 								<section>
 									<?php the_content(); ?>
 										<?php
@@ -77,7 +84,7 @@ if ( $elara_posts_sidebar ) {
 								</section>
 							</div>
 							</article>
-
+							<?php elara_show_sidebar(); ?>
 					</div>
 				</section>
 <?php get_footer();

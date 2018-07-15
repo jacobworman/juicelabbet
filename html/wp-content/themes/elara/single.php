@@ -20,3 +20,22 @@ if ( $elara_posts_sidebar ) {
 }
 ?>
 
+<section id="main">
+					<div class="container">
+
+						<!-- Content -->
+							<article class="box post" <?php post_class( 'entry-singular' ); ?>>
+								<?php
+									if ( $elara_posts_sidebar_position == 'bottom' || ! $elara_posts_sidebar ) :
+										/**
+										 * Featured image
+										 */
+										if ( $elara_posts_featured_image_show ) :
+											elara_entry_thumbnail( 'elara-slider' );
+										endif;
+									endif;
+								?>
+
+					</div>
+				</section>
+<?php get_footer();

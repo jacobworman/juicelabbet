@@ -34,7 +34,7 @@ $elara_class = elara_set_feed_post_class(); ?>
 		?>
 		<footer>
 		<ul class="actions">
-		<li><a href="<?php esc_url( get_permalink() ); ?>" class="button alt">Find out more</a></li>
+		<li><a href="<? get_permalink() ?>" class="button alt">Cool, läs mer</a></li>
 		</ul>
 		</footer>
 </section>

@@ -1,29 +1,28 @@
 <?php
-/**
- * The main template file
- *
- * This is the most generic template file in a WordPress theme
- *
- * @link https://codex.wordpress.org/Template_Hierarchy
- *
- * @package elara
- */
+
 get_header(); ?>
 
-<h1>YES4!!</h1>
-<div class="default-background-color">
-	<main class="main" role="main">
-		<div class="wrapper">
-			<div class="row">
-				<div class="<?php echo esc_attr( elara_set_main_class() ); ?>">
-					<?php get_template_part( 'parts/feed' ); ?>
-				</div><!-- <?php echo esc_attr( elara_set_main_class() ); ?> -->
 
-				<?php elara_show_sidebar(); ?>
-			</div><!-- row -->
-		</div><!-- wrapper -->
-	</main>
-</div><!-- default-background-color -->
+<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
+								<!-- Portfolio -->
+									<section>
+										<header class="major">
+											<h2><?php single_cat_title(); ?></h2>
+											<p><?php the_archive_description(); ?></p>
+										</header>
+										<div class="row <?php echo esc_attr( elara_set_main_class() ); ?>">
+											<?php get_template_part( 'parts/feed' ); ?>
+										</div>
+										<?php elara_show_sidebar(); ?>
+									</section>
 
+							</div>
+						</div>
+					</div>
+				</section>
 
 <?php get_footer();

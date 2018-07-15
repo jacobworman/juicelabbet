@@ -37,6 +37,7 @@ if ( $elara_posts_sidebar ) {
 								?>
 								<!-- här -->
 								<div class=" <?php echo esc_attr( $elara_row_class ); ?>">
+								<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 								<header>
 									<h2><?php elara_entry_title(); ?></h2>
 									<p><?php elara_entry_author(); ?>
@@ -71,7 +72,22 @@ if ( $elara_posts_sidebar ) {
 										?>
 									</footer>
 								</section>
+								<section>
+									<?php
+									/**
+									 * Post navigation
+									 */
+									get_template_part( 'parts/navigation', 'single' );
 
+									if ( comments_open() || get_comments_number() ) :
+										comments_template();
+									endif;
+								endwhile; endif;
+							?>
+								</section>
+							</div>
+							</article>
+							<?php elara_show_sidebar(); ?>
 							<!-- end -->
 					</div>
 				</section>

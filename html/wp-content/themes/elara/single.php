@@ -24,8 +24,18 @@ if ( $elara_posts_sidebar ) {
 					<div class="container">
 
 						<!-- Content -->
-							<article class="box post">
-								<?php elara_entry_thumbnail( 'elara-slider' ); ?>
+							<article class="box post" <?php post_class( 'entry-singular' ); ?>>
+								<?php
+									if ( $elara_posts_sidebar_position == 'bottom' || ! $elara_posts_sidebar ) :
+										/**
+										 * Featured image
+										 */
+										if ( $elara_posts_featured_image_show ) :
+											elara_entry_thumbnail( 'elara-slider' );
+										endif;
+									endif;
+								?>
+								<div class=" <?php echo esc_attr( $elara_row_class ); ?>">
 								<header>
 									<h2><?php elara_entry_title(); ?></h2>
 									<p><?php elara_entry_categories(); ?>
@@ -65,6 +75,7 @@ if ( $elara_posts_sidebar ) {
 								endwhile; endif;
 							?>
 								</section>
+							</div>
 							</article>
 
 					</div>

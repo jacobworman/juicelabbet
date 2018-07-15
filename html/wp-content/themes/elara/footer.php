@@ -13,25 +13,30 @@ if ( $elara_active_sidebar > 1 ) {
 	$elara_footer_class = 'center';
 }
 ?>
-	<div class="footer footer-<?php echo esc_attr( $elara_footer_class ); ?>" role="contentinfo">
-		<div class="default-background-color">
-			<div class="wrapper">
-			<?php
-				/**
-				 * Footer widget area
-				 */
-				get_sidebar( 'footer' ); ?>
 
-				<div class="footer-copyrights">
-					<ul>
-						<li class="credits">
-                            @Juicelabbet 2018
-                           </li>
-				</div><!-- footer-copyrights -->
 
-			</div><!-- wrapper -->
-		</div><!-- default-background-color -->
-	</div><!-- footer -->
+<!-- Footer -->
+				<section id="footer">
+					<div class="container">
+						<div class="row">
+							
+
+							<?php get_sidebar( 'frontpage' ); ?>
+							<div class="col-12">
+
+								<!-- Copyright -->
+									<div id="copyright">
+										<ul class="links">
+											<li>&copy; Juicelabbet.se, All rights reserved.</li>
+										</ul>
+									</div>
+
+							</div>
+						</div>
+					</div>
+				</section>
+
+		</div>
 
 <?php wp_footer(); ?>
 </body>

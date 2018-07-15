@@ -281,10 +281,10 @@ if ( ! function_exists( 'elara_default_widgets_args' ) ) :
 	 */
 	function elara_default_widgets_args( $class = '' ) {
 		$args = array(
-			'before_widget' => '<div class="default-widget widget ' . $class . '">',
-			'after_widget'  => '</div>',
-			'before_title'  => '<h3 class="widget-title">',
-			'after_title'   => '</h3>'
+			'before_widget' => '',
+			'after_widget'  => '',
+			'before_title'  => '<li><h3 class="widget-title">',
+			'after_title'   => '</h3></li>'
 		);
 
 		$widget_args = '';

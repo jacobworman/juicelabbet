@@ -10,124 +10,102 @@ get_header();
 
 $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_position' ); ?>
 
-<div class="default-background-color">
-	<main class="main" role="main">
-		<div class="wrapper">
-				<?php
-					if ( $elara_blog_feed_sidebar_position == 'bottom' ) :
-						/**
-						 * Banner / Slider section
-						 */
-						if ( is_front_page() && ! is_paged() ) :
-							get_template_part( 'parts/frontpage', 'banner' );
-						endif;
-					endif;
-				?>
+<!-- Intro -->
+						<section id="intro" class="container">
+							<div class="row">
+								<div class="col-4 col-12-medium">
+									<section class="first">
+										<a href="#" class="image featured"><img src="https://png.pngtree.com/element_pic/17/07/21/b50c2bbd93b6750d7917026716e56c68.jpg" alt="" /></a>
+										<header>
+											<a href="/taggar/ingefara"><h2>Ingefära</h2></a>
+										</header>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="middle">
+										<a href="#" class="image featured"><img src="https://www.freepngimg.com/thumb/apple/9-apple-png-image-thumb.png" alt="" /></a>
+										<header>
+											<a href="/apple"><h2>Äpple</h2></a>
+										</header>
+									</section>
+								</div>
+								<div class="col-4 col-12-medium">
+									<section class="last">
+										<a href="#" class="image featured"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQC_3eRHQzKiOFPFPMjsGdCybqyap_oQBxxAShT6ztm__WiMJGA" alt="" /></a>
+										<header>
+											<a href="/morot"><h2>Morot</h2></a>
+										</header>
+									</section>
+								</div>
+							</div>
+							<footer>
+								<ul class="actions">
+									<li><a href="https://instagram.com/juicelabbet.se" class="button large">Instagram</a></li>
+								</ul>
+							</footer>
+						</section>
 
-				<div class="row">
-					<div class="<?php echo esc_attr( elara_set_main_class() ); ?>">
-						<?php
-							if ( $elara_blog_feed_sidebar_position == 'top' ) :
-								/**
-								 * Banner / Slider section
-								 */
-								if ( is_front_page() && ! is_paged() ) :
-									get_template_part( 'parts/frontpage', 'banner' );
-								endif;
-							endif;
-                            /**
-							 * Frontpage set to Static page
-							 */
-							if ( get_option( 'show_on_front' ) == 'page' ) :
-								/**
-								 * Get page content and frontpage sidebar
-								 */
-								?>
-								<div class="entry-singular">
-									<div class="entry-content">
-										<?php the_content(); ?>
-									</div>
-								</div><?php
-							/**
-							 * Frontpage set to Latest posts
-							 */
-							elseif ( get_option( 'show_on_front' ) == 'posts' ) :
-								/**
-								 * Blog feed
-								 */
-								get_template_part( 'parts/feed' );
-							endif; //get_option( 'show_on_front' )
-							/**
-							 * Featured categories
-							 */
-							if ( is_front_page() && ! is_paged() ) :
-								get_template_part( 'parts/frontpage', 'featured-categories' );
-							endif;
-						?>
-					</div><!-- <?php echo esc_attr( elara_set_main_class() ); ?> -->
+<!-- Main -->
+				<section id="main">
+					<div class="container">
+						<div class="row">
+							<div class="col-12">
 
-					<?php elara_show_sidebar(); ?>
-				</div><!-- row -->
+								<!-- Portfolio -->
+									<section>
+										<header class="major">
+											<h2>Juicerecept</h2>
+										</header>
+										<div class="row">
+											<?php get_template_part( 'parts/feed' ); ?>
+										</div>
+									</section>
 
+							</div>
+							<div class="col-12">
 
-				<!-- my -->
-				<div class="divbox">
-	<section style="margin-bottom:55px;">
-	<h1 style="margin:0 auto;padding:0;text-align:center;color: #5a5555;font-family: QuattroSans,Arial,sans-serif;">Vad söker du? <i class="far fa-smile fa-2x"></i></h1>
-	</section>
-	<div class="row1">
-	  <div class="column1" style="border-right:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
-	    <a href="/apple">
-	    	<i class="fas fa-tree-alt fa-5x" style="color:#8db600;"></i>
-	      <h2 class="block-icon"><br />Äpple</h2>
-	  </a>
-	  </div>
-	  <div class="column1" style="border-left:1px solid #aeb3ba;border-bottom:1px solid #c6cbd3;">
-	     <a href="/morot">
-	     	<i class="fab fa-cuttlefish fa-5x" style="color:#ed9121;"></i>
-	      <h2 class="block-icon"><br />Morot</h2>
+								<!-- Blog -->
+									<section>
+										<header class="major">
+											<h2>Populära juicer</h2>
+										</header>
+										<div class="row">
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<a href="#" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/20180618_150658-440x360.jpg" alt="" /></a>
+													<header>
+														<h3>Qala juice</h3>
+													</header>
+													<p>Super god juice gjord på ananas, hallon och banan. Den är inspirerad av Joe & the Juice Pick Me Up...</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://juicelabbet.se/blandat/qala-juice/" class="button icon fa-file-text">Gå till artikeln</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+											<div class="col-6 col-12-small">
+												<section class="box">
+													<a href="#" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/rodbetsjuice_vid_fibromyalgi_580x416-440x360.jpg" alt="" /></a>
+													<header>
+														<h3>Rödbetsjuice</h3>
+													</header>
+													<p>Inspirerad av Lovisebergs råsaft rödbetsjuice. Om du vill ha en riktig bra rödbetsjuice rekommenderar jag den här juicen…</p>
+													<footer>
+														<ul class="actions">
+															<li><a href="https://juicelabbet.se/blandat/rodbetsjuice/" class="button icon fa-file-text">Gå till artikeln</a></li>
+														</ul>
+													</footer>
+												</section>
+											</div>
+										</div>
+									</section>
 
-	  </a>
-	</div>
-	<div class="row1">
-	  <div class="column1" style="border-right:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
-	    <a href="/apelsin">
-	    	<i class="fas fa-circle fa-5x" style="color:#FFA500;"></i>
-	      <h2 class="block-icon"><br />Apelsin</h2>
+							</div>
+						</div>
+					</div>
+				</section>
 
-	  </a>
-	  </div>
-	  <div class="column1" style="border-left:1px solid #aeb3ba;border-top:1px solid #c6cbd3;">
-	    <a href="/blandat">
-	    	<i class="fas fa-blender fa-5x" style="color:#4286f4;"></i>
-	      <h2 class="block-icon"><br />Blandat</h2>
-
-	  </a>
-	  </div>
-	</div>
-</div>
-
-				<?php
-					/**
-					 * Featured post
-					 */
-					if ( is_front_page() && ! is_paged() ) :
-						get_template_part( 'parts/frontpage', 'featured' );
-					endif;
-				?>
-		</div><!-- wrapper -->
-	</main>
-
-	<?php if ( is_active_sidebar( 'frontpage-full-1' ) ) : ?>
-		<div class="widget-area widget-area-frontpage" role="complementary">
-			<div class="widget-area-frontpage-1">
-				<div class="wrapper">
-					<?php dynamic_sidebar( 'frontpage-full-1' ); ?>
-				</div>
-			</div>
-		</div>
-	<?php endif; ?>
-</div><!-- default-background-color -->
 
 
 <?php

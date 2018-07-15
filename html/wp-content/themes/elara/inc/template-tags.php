@@ -38,7 +38,7 @@ if ( ! function_exists( 'elara_entry_thumbnail' ) ) :
 				<?php if ( 'video' === get_post_format() && elara_get_first_embed_media( get_the_ID() ) && $show_modal ) : ?>
 					<a href="#" data-toggle="modal" data-target="#elara-video-modal-<?php the_ID(); ?>">
 				<?php else : ?>
-					<a href="<?php the_permalink(); ?>" rel="bookmark">
+					<a href="<?php the_permalink(); ?>" rel="bookmark" class="image featured">
 				<?php endif; ?>
 
 				<?php if ( has_post_thumbnail() ) : ?>
@@ -69,9 +69,9 @@ if ( ! function_exists( 'elara_entry_title' ) ) :
 	 */
 	function elara_entry_title() {
 		if ( is_single() ) {
-			the_title( '<h1 class="entry-title">', '</h1>' );
+			the_title( '<header><h3 class="entry-title">', '</h3></header>' );
 		} else {
-			the_title( '<h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3>' );
+			the_title( '<header><h3 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h3></header>' );
 		}
 	}
 endif;

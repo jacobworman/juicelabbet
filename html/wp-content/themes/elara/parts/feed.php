@@ -6,7 +6,7 @@
  */
 ?>
 
-<div id="blog-feed" class="section-feed row">
+
 	<?php
 		/**
 		 * The loop
@@ -19,7 +19,6 @@
 
 		endwhile; endif;
 	?>
-</div><!-- section-feed row -->
 
 <?php
 	/**

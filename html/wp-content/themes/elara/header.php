@@ -21,25 +21,48 @@
 	<?php wp_head(); ?>
 	<meta name="google-site-verification" content="ltfoA0gHVeFuY1fpeQg6OBUPA1VVbl3F0eOAP90rtW4" />
 </head>
-<style>
-.background{
-	background-image: url("https://imgur.com/a/LdNWGoE");
-}
-</style>
-<body <?php body_class(); ?>>
+<body class="homepage is-preload">
+	<div id="page-wrapper">
 
-	<div class="header background" role="banner">
+	<!-- Header -->
+				<section id="header">
 
-		<?php
-			/**
-			 * Header Widgets
-			*//*
-			 * Site identity
-			 */
-			get_template_part( 'parts/site', 'identity' );
-			/**
-			 * Main navigation
-			 */
-			get_template_part( 'parts/navigation', 'header' );
-		?>
-	</div><!-- header -->
+					<!-- Logo -->
+						<h1><a href="https://juicelabbet.se">Juicelabbet.se</a></h1>
+
+					<!-- Nav -->
+						<form role="search" method="get" class="search-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+							<input type="search" class="search-field" value="<?php echo esc_attr( get_search_query() ); ?>" name="s" placeholder="Sök ingredienser & juicerecept" />
+							<button type="submit" class="search-submit">
+								<?php elara_fontawesome_icon( 'search' ); ?>
+							</button>
+						</form>
+
+					<!-- Banner -->
+						<section id="banner">
+							<header>
+								<h2>Juices. Just how pure it should be.</h2>
+								<?php
+										if ( has_nav_menu( 'header' ) ) :
+											$elara_args = array(
+												'theme_location'    => 'header',
+												'depth'             => 2,
+												'container'         => 'div',
+												'container_id'      => 'main-menu',
+												'container_class'   => 'navbar-collapse collapse menu-container',
+												'menu_class'        => 'nav navbar-nav menu',
+												'fallback_cb'       => '',
+												'walker'            => new wp_bootstrap_navwalker()
+											);
+
+											wp_nav_menu( $elara_args );
+
+										else :
+
+											elara_default_nav();
+
+										endif; // has_nav_menu( 'header' )
+									?>
+							</header>
+						</section>
+				</section>

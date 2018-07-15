@@ -39,23 +39,22 @@ if ( is_active_sidebar( 'footer-columns-col-3' )
 <?php elseif ($elara_example_content == 1) : ?>
 
 
-    <div class="widget-area widget-area-footer widget-area-footer-columns" role="complementary">
+    <div class="col-4 col-6-medium col-12-small">
 
         <?php
             $elara_active_sidebar = 5;
             $elara_class = elara_get_bootstrap_class( $elara_active_sidebar );
         ?>
 
-        <div class="row footer-columns footer-columns-<?php echo esc_attr( $elara_active_sidebar ); ?>">
-
+        <section>
             <?php
                 for ( $elara_i = 1; $elara_i < 6; $elara_i++ ) { ?>
-                    <div class="<?php echo esc_attr( $elara_class ); ?> footer-columns-col-<?php echo $elara_i; ?>">
+                <ul class="divided">
                         <?php elara_example_sidebar_footer( $elara_i ); ?>
-                    </div>
+                </ul>
             <?php } ?>
 
-        </div><!-- row footer-columns" -->
+        </section><!-- row footer-columns" -->
 
 	</div><!-- widget-area widget-area-footer -->
     

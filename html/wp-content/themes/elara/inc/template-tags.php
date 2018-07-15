@@ -42,6 +42,7 @@ if ( ! function_exists( 'elara_entry_thumbnail' ) ) :
 				<?php endif; ?>
 
 				<?php if ( has_post_thumbnail() ) : ?>
+				<p><?=$size?></p>
 					<?php the_post_thumbnail( false, array( 'alt' => get_the_title(), 'class' => 'img-responsive' ) ); ?>
 
 				<?php elseif ( $elara_example_content == 1 ) : ?>

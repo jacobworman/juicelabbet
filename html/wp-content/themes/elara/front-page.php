@@ -112,6 +112,5 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 	/**
 	 * Frontpage full width widget area
 	 */
-	get_sidebar( 'frontpage' );
 
 get_footer();

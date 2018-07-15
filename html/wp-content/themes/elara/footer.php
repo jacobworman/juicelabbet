@@ -39,5 +39,13 @@ if ( $elara_active_sidebar > 1 ) {
 		</div>
 
 <?php wp_footer(); ?>
+
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/jquery.min.js"></script>
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/jquery.dropotron.min.js"></script>
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/browser.min.js"></script>
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/breakpoints.min.js"></script>
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/util.js"></script>
+<script src="https://html5up.net/uploads/demos/dopetrope/assets/js/main.js"></script>
+
 </body>
 </html>

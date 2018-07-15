@@ -51,7 +51,28 @@ if ( $elara_posts_sidebar ) {
 											endif;
 										endif;
 									?>
+									<!-- här -->
+								<section>
+									<?php the_content(); ?>
+										<?php
+											wp_link_pages( array(
+												'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'elara' ),
+												'after'  => '</div>',
+											));
+										?>
+								</section>
+								<section>
+									<footer class="entry-meta">
+										<h3>Relevanta ingredienser</h3>
+										<?php
+											if ( $elara_posts_meta_show && $elara_posts_tags_show && has_tag() ) :
+												the_tags( '<h3 class="section-title">' . esc_html__( 'Tags', 'elara' ) . '</h3><ul><li class="list-item-separators">', '</li><li class="list-item-separators">', '</li></ul>' );
+											endif;
+										?>
+									</footer>
+								</section>
 
+							<!-- end -->
 					</div>
 				</section>
 <?php get_footer();

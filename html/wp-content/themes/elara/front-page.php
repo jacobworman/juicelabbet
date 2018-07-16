@@ -14,7 +14,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 <!-- Banner -->
 						<section id="banner">
 							<header>
-								<h2>Här Är Våra Favorit Ämnen.</h2>
+								<h2>Här är våra favorit ämnen.</h2>
 								<?php
 										if ( has_nav_menu( 'header' ) ) :
 											$elara_args = array(

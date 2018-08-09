@@ -32,6 +32,8 @@ $elara_featured_post_id = elara_get_option( 'elara_frontpage_large_post' );
 
 if ( $elara_featured_image ) : ?>
 
+	
+
 	<div class="frontpage-featured <?php echo esc_attr( $elara_class ); ?>">
 
 		<div class="banner" style="background-image:url(<?php echo esc_url( $elara_featured_image ); ?>)">

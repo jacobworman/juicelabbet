@@ -18,10 +18,7 @@ $elara_featured_categories_posts_number = elara_get_option( 'elara_frontpage_fea
  * @var string
  */
 $elara_column_class = elara_set_featured_categories_class( $elara_featured_categories_columns ); ?>
-
-<div class="section-featured-categories widget-area widget-area-frontpage row columns-<?php echo esc_attr( $elara_featured_categories_columns ); ?>">
-
-	<?php
+<?php
 		/**
 		 * Loop through columns
 		 */
@@ -35,23 +32,22 @@ $elara_column_class = elara_set_featured_categories_class( $elara_featured_categ
 			);
 
 			$elara_query = new WP_Query( $elara_args );
-
+	
 			if ( $elara_query->have_posts() ) : ?>
 
-				<div class="<?php echo esc_attr( $elara_column_class ); ?>">
-					<h3 class="widget-title"><?php echo esc_html( $elara_column_heading ); ?></h3>
+									<section>
+										<header class="major">
+											<h2>Guide to juicer</h2>
+										</header>
+										<div class="row">
+										<?php while ( $elara_query->have_posts() ) : $elara_query->the_post(); ?>
+											<?php get_template_part( 'parts/entry', 'featured-category' ); ?>
+										<?php endwhile; ?>
+										</div>
+									</section>
 
-					<div class="featured-category-posts">
-						<?php while ( $elara_query->have_posts() ) : $elara_query->the_post(); ?>
-							<?php get_template_part( 'parts/entry', 'featured-category' ); ?>
-						<?php endwhile; // $elara_query->have_posts() ?>
-					</div><!-- featured-category-posts -->
-				</div><!-- <?php echo esc_attr( $elara_column_class ); ?> -->
-
-			<?php wp_reset_postdata();
+<?php wp_reset_postdata();
 			endif; // $elara_query->have_posts()
 
 		endfor; // $elara_i = 1; $elara_i <= $elara_featured_categories_columns; $elara_i++
-	?>
-
-</div><!-- section-featured-categories row -->
+?>

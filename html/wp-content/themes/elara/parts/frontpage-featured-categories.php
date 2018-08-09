@@ -35,16 +35,11 @@ $elara_column_class = elara_set_featured_categories_class( $elara_featured_categ
 	
 			if ( $elara_query->have_posts() ) : ?>
 
-									<section>
-										<header class="major">
-											<h2>Guide to juicer</h2>
-										</header>
 										<div class="row">
 										<?php while ( $elara_query->have_posts() ) : $elara_query->the_post(); ?>
 											<?php get_template_part( 'parts/entry', 'featured-category' ); ?>
 										<?php endwhile; ?>
 										</div>
-									</section>
 
 <?php wp_reset_postdata();
 			endif; // $elara_query->have_posts()

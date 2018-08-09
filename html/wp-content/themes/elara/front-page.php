@@ -99,27 +99,11 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 
 							</div>
 							<div class="col-12">
-
-								<!-- Blog -->
 									<section>
 										<header class="major">
 											<h2>Guide to juicer</h2>
 										</header>
-										<div class="row">
-											<div class="col-6 col-12-small">
-												<section class="box">
-													<a href="https://juicelabbet.se/blandat/qala-juice/" class="image featured"><img src="https://juicelabbet.se/wp-content/uploads/2018/06/20180618_150658-440x360.jpg" alt="" /></a>
-													<header>
-														<h3>Qala juice</h3>
-													</header>
-													<p>Super god juice gjord på ananas, hallon och banan. Den är inspirerad av Joe & the Juice Pick Me Up...</p>
-													<footer>
-														<ul class="actions">
-															<li><a href="https://juicelabbet.se/blandat/qala-juice/" class="button icon fa-file-text">Gå till artikeln</a></li>
-														</ul>
-													</footer>
-												</section>
-											</div>
+								<!-- Blog -->
 										<?php 
 											/**
 											 * Featured categories
@@ -128,9 +112,7 @@ $elara_blog_feed_sidebar_position = elara_get_option( 'elara_blog_feed_sidebar_p
 												get_template_part( 'parts/frontpage', 'featured-categories' );
 											endif;
 										?>
-										</div>
 									</section>
-
 							</div>
 						</div>
 					</div>
